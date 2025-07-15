@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
 /* Animação Nuvens */
-
 .cloud{
     position: absolute;
     top: 0;
@@ -29,7 +28,6 @@
 }
 
 /* Animação Digitação */
-
 @keyframes cursor {
     50% { border-color: transparent;}
 }

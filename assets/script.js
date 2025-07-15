@@ -1,5 +1,4 @@
-// Animação Digitação
-
+/* Animação Digitação */
 document.addEventListener('DOMContentLoaded', () => {
     const textElement = document.querySelector('.text');
     if (!textElement) return;
@@ -26,4 +25,17 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     typeChar();
+});
+
+
+/* Animação Transparência do Header */
+const header = document.querySelector('header');
+const scroll_header = 50;
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > scroll_header) {
+        header.classList.add('scrolled'); // Adiciona a classe 'scrolled'
+    } else {
+        header.classList.remove('scrolled'); // Remove a classe 'scrolled'
+    }
 });
