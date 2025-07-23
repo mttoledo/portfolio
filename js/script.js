@@ -39,3 +39,33 @@ window.addEventListener('scroll', () => {
         header.classList.remove('scrolled'); // Remove a classe 'scrolled'
     }
 });
+
+/* Inicialização da Biblioteca SwiperJS */
+const swiper = new Swiper('.slider-wrapper', {
+  loop: true,
+  grabCursor: true,
+  spaceBetween: 22,
+  autoHeight: true,
+  speed: 400,
+
+  autoplay: {
+   delay: 4000,
+ },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  breakpoints: {
+    0: {
+        slidesPerView: 1
+    },
+    620: {
+        slidesPerView: 2
+    },
+    1024: {
+        slidesPerView: 3
+    }
+  }
+});
