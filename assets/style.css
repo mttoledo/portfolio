@@ -147,6 +147,7 @@ header.scrolled {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 20px;
 }
 
 .section-container div {
@@ -155,15 +156,6 @@ header.scrolled {
     max-width: 500px;
     word-wrap: break-word;
     margin-bottom: 200px;
-}
-
-#backend, #data-engineer {
-    border: 1px solid black;
-}
-
-#frontend {
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
 }
 
 .section-container h2 {
@@ -176,6 +168,7 @@ header.scrolled {
     justify-content: center;
     align-items: flex-start;
     padding: 40px 0px;
+    border: 1px solid black;
 }
 
 .expertise-flex img {
@@ -201,7 +194,6 @@ header.scrolled {
     width: 400px;
     height: 350px !important;
     border: .5px solid rgb(0, 0, 0);
-    border-radius: 5px;
     display: flex !important;
     align-items: end;
     background: white;
