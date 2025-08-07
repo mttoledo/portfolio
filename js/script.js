@@ -66,6 +66,9 @@ const swiper = new Swiper('.slider-wrapper', {
     },
     1024: {
         slidesPerView: 3
+    },
+    1800: {
+        slidesPerView: 4
     }
   }
 });

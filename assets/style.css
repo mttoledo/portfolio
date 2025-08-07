@@ -9,7 +9,7 @@
 }
 
 html {
-    font-size: 16px;
+    font-size: 100%;
     font-family: sans-serif;
     scroll-behavior: smooth;
 }
@@ -183,11 +183,10 @@ header.scrolled {
 .slider-wrapper {
     padding-top: 80px;
     margin-bottom: 80px !important;
-    max-width: 1200px;
+    max-width: 1600px;
     margin: 80px auto 0px;
     padding: 0px 20px;
     overflow: hidden;
-    max-width: 1200px;
 }
 
 .card-item {
@@ -241,6 +240,11 @@ header.scrolled {
 }
 
 .contact-container {
+<<<<<<< HEAD
+=======
+    padding-left: 9%;
+    margin: auto;
+>>>>>>> fb353c733003f31269a036665fb6760d95f92c66
     display: flex;
     flex-flow: row;
     justify-content: space-evenly;
