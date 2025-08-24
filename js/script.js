@@ -1,3 +1,27 @@
+/* Lógica do Menu Hambúrguer */
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburgerBtn = document.querySelector('.hamburger-btn');
+    const navLinks = document.querySelector('#nav-links');
+
+    if (hamburgerBtn && navLinks) {
+        hamburgerBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    }
+});
+
+/* Animação Transparência do Header */
+const header = document.querySelector('header');
+const scroll_header = 50;
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > scroll_header) {
+        header.classList.add('scrolled'); 
+    } else {
+        header.classList.remove('scrolled');
+    }
+});
+
 /* Animação Digitação */
 document.addEventListener('DOMContentLoaded', () => {
     const textElement = document.querySelector('.text');
@@ -27,19 +51,6 @@ document.addEventListener('DOMContentLoaded', () => {
     typeChar();
 });
 
-
-/* Animação Transparência do Header */
-const header = document.querySelector('header');
-const scroll_header = 50;
-
-window.addEventListener('scroll', () => {
-    if (window.scrollY > scroll_header) {
-        header.classList.add('scrolled'); // Adiciona a classe 'scrolled'
-    } else {
-        header.classList.remove('scrolled'); // Remove a classe 'scrolled'
-    }
-});
-
 /* Inicialização da Biblioteca SwiperJS */
 const swiper = new Swiper('.slider-wrapper', {
   loop: true,
@@ -49,7 +60,7 @@ const swiper = new Swiper('.slider-wrapper', {
   speed: 400,
 
   autoplay: {
-   delay: 4000,
+   delay: 8000,
  },
 
   navigation: {
@@ -71,4 +82,32 @@ const swiper = new Swiper('.slider-wrapper', {
         slidesPerView: 4
     }
   }
+});
+
+/* Project Info DOM change */
+
+
+/* Contact Info DOM change */
+document.addEventListener('DOMContentLoaded', function() {
+    const links = document.querySelectorAll('.contact-links a');
+
+    links.forEach(link => {
+        link.setAttribute('data-original-text', link.textContent);
+
+        link.addEventListener('mouseover', function() {
+            if (this.id === 'contact-email') {
+                this.textContent = 'Send me an e-mail!';
+            } else if (this.id === 'contact-github') {
+                this.textContent = 'See my projects!';
+            } else if (this.id === 'contact-linkedin') {
+                this.textContent = 'Connect with me!';
+            } else if (this.id === 'contact-instagram') {
+                this.textContent = 'Follow me on Insta!';
+            }
+        });
+
+        link.addEventListener('mouseout', function() {
+            this.textContent = this.getAttribute('data-original-text');
+        });
+    });
 });
