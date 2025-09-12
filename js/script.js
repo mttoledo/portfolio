@@ -84,9 +84,6 @@ const swiper = new Swiper('.slider-wrapper', {
   }
 });
 
-/* Project Info DOM change */
-
-
 /* Contact Info DOM change */
 document.addEventListener('DOMContentLoaded', function() {
     const links = document.querySelectorAll('.contact-links a');
