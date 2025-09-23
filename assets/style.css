@@ -310,10 +310,13 @@ header.scrolled {
     color: white;
 }
 
+#calculadora {
+    background-image: url(images/calculadora.png);
+}
+
 #fractalTree {
     background-image: url(images/fractal-tree.png);
-    background-size: cover;
-    background-position: center;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
