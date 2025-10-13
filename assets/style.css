@@ -310,6 +310,13 @@ header.scrolled {
     color: white;
 }
 
+#bankist {
+    background-image: url(images/bankist.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 #calculadora {
     background-image: url(images/calculadora.png);
 }
